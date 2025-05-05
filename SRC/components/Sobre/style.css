@@ -1,0 +1,101 @@
+.sobre-section {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.sobre-titulo {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #4F4F4F;
+    margin-top: 40px;
+}
+
+.sobre-descricao {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #4F4F4F;
+    line-height: 1.6;
+}
+
+.sobre-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0 5vw; /* Ajuste para responsividade */
+}
+
+.sobre-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.sobre-card:hover {
+    transform: translateY(-10px);
+}
+
+.sobre-icon {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.sobre-card h3 {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #4F4F4F;
+}
+
+.sobre-card p {
+    font-size: 1rem;
+    color: #4F4F4F;
+    line-height: 1.5;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .sobre-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Ajuste de padding para telas menores */
+    }
+
+    .sobre-titulo {
+        font-size: 24px; /* Ajuste de tamanho da fonte */
+    }
+
+    .sobre-descricao {
+        font-size: 16px; /* Ajuste de fonte em dispositivos pequenos */
+    }
+}
+
+.rectangle {
+    background-color: #1deae4;
+    height: 34px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%; /* Corrigido para 100% */
+}
+
+.seao .overlap-group {
+    background-color: #1deae4;
+    height: 45px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Corrigido para 100% */
+}

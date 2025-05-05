@@ -1,0 +1,94 @@
+/* Seção principal com padding, fundo claro e centralização */
+.sobre-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+/* Título principal com fonte itálica leve */
+.sobre-titulo {
+  font-family: "Inter-ExtraLight Italic", Helvetica;
+  font-size: 32px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container dos cards com grid responsivo */
+.sobre-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Inter-ExtraLight Italic", Helvetica;
+  font-size: 18px;
+  gap: 30px;
+}
+
+/* Cada card individual com borda arredondada, sombra e transição */
+.sobre-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos cards */
+.sobre-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ícones no topo de cada card */
+.sobre-icon {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* Títulos dos cards */
+.sobre-card h3 {
+  font-family: "Inter-ExtraLight Italic", Helvetica;
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #4F4F4F;
+}
+
+/* Texto descritivo dos cards */
+.sobre-card p {
+  font-size: 1rem;
+  color: #4F4F4F;
+  line-height: 1.5;
+}
+
+/* Retângulo superior fixo */
+.rectangle sticky {
+  background-color: #fe284a;
+  height: 34px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .sobre-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.rectangle-sticky {
+  background-color: #fe284a;
+  height: 34px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}

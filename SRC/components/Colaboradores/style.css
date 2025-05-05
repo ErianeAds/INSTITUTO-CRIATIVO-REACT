@@ -1,0 +1,20 @@
+.colaboradores {
+    height: 36px;
+    position: relative;
+    width: 172px;
+  }
+  
+  .colaboradores .text-wrapper-3 {
+    color: #000000e6;
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
