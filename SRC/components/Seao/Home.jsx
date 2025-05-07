@@ -21,19 +21,38 @@ import exemplo15 from "./IMG/example.png";
 import "./style.css";
 
 export const Seao = () => {
-  useEffect(() => {
-    const interval = setInterval(() => {
+  
+    useEffect(() => {
       const carrossel = document.querySelector(".carrossel");
-      if (carrossel) {
-        carrossel.scrollBy({ left: 230, behavior: "smooth" }); // ajuste a largura conforme necessário
-      }
-    }, 3000); // tempo em milissegundos
-
-    return () => clearInterval(interval); // limpa ao desmontar
-  }, []);
+      const esquerda = document.querySelector(".seta.esquerda");
+      const direita = document.querySelector(".seta.direita");
+  
+      const scroll = (dir) => {
+        if (carrossel) {
+          const scrollAmount = dir === "esquerda" ? -230 : 230;
+          carrossel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+      };
+  
+      const handleEsquerdaClick = () => scroll("esquerda");
+      const handleDireitaClick = () => scroll("direita");
+  
+      esquerda?.addEventListener("click", handleEsquerdaClick);
+      direita?.addEventListener("click", handleDireitaClick);
+  
+      const interval = setInterval(() => scroll("direita"), 3000);
+  
+      return () => {
+        clearInterval(interval);
+        esquerda?.removeEventListener("click", handleEsquerdaClick);
+        direita?.removeEventListener("click", handleDireitaClick);
+      };
+    }, []);
+  
+  
   return (
   
-    <div className="seao">
+    <div className="Seao">
      <Header/>
   
       <div className="hero-image">

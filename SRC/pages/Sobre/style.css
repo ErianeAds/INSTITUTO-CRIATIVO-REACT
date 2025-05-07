@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+    align-items: center;
     margin-top: 40px;
     padding: 0 5vw; /* Ajuste para responsividade */
 }
@@ -68,6 +69,7 @@
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
     .sobre-cards {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 20px; /* Ajuste de padding para telas menores */
@@ -91,7 +93,7 @@
     width: 100%; /* Corrigido para 100% */
 }
 
-.seao .overlap-group {
+.Seao .overlap-group {
     background-color: #1deae4;
     height: 45px;
     left: 0;

@@ -40,6 +40,7 @@ export const Header = () => {
         </button>
 
         <nav className={`nav-items ${menuOpen ? "open" : ""}`}>
+          <Link to="/home" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/sobre" onClick={() => setMenuOpen(false)}>Sobre</Link>
           <Link to="/segmento" onClick={() => setMenuOpen(false)}>Segmentos</Link>
           <Link to="/colaboradores" onClick={() => setMenuOpen(false)}>Colaboradores</Link>

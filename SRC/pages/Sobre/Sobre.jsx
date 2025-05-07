@@ -4,7 +4,7 @@ import eyeSolid from "./eye-solid.svg";
 import medalSolid from "./medal-solid.svg";
 import { Segmento } from "../Segmento";
 import "./style.css";
-import { Header } from "../../screens/Header/Header";
+import { Header } from "../../components/Header/Header";
 
 
 export const Sobre = () => {

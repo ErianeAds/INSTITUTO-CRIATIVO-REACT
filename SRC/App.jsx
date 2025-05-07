@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import { Seao } from "./screens/Seao";
-import { Sobre } from "./components/Sobre";
-import { Colaboradores } from "./components/Colaboradores";
-import { ImpactoSocial } from "./components/ImpactoSocial";
-import { Marcas } from "./components/Marcas";
-import { Segmento } from "./components/Segmento";
+import { Seao } from "./components/Seao/";
+//import { Home } from "./pages/Seao";
+import { Sobre } from "./pages/Sobre";
+import { Colaboradores } from "./pages/Colaboradores";
+import { ImpactoSocial } from "./pages/ImpactoSocial";
+import { Marcas } from "./pages/Marcas";
+import { Segmento } from "./pages/Segmento";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Seao />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/colaboradores" element={<Colaboradores />} />
       <Route path="/impacto-social" element={<ImpactoSocial />} />
