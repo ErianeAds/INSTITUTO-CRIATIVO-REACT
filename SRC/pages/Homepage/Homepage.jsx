@@ -1,6 +1,6 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import { Header } from "../Header/Header";
+import { Header } from "../../components/Header/Header";
 import { useEffect } from "react";
 import exemplo2 from "./IMG/example-2.png";
 import exemplo3 from "./IMG/example-3.png";
@@ -20,7 +20,7 @@ import exemplo15 from "./IMG/example.png";
 
 import "./style.css";
 
-export const Seao = () => {
+export const Homepage = () => {
   
     useEffect(() => {
       const carrossel = document.querySelector(".carrossel");
