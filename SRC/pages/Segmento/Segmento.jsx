@@ -3,10 +3,14 @@ import bookSolid from "./book-solid.svg";
 import heartPulseSolid from "./heart-pulse-solid.svg";
 import spaceAwesomeBrandsSolid1 from "./space-awesome-brands-solid.svg";
 import suitcaseSolid from "./suitcase-solid.svg";
+import { Header } from "../../components/Header/Header";
+
 import "./style.css";
 
 export const Segmento = () => {
+ 
   const segmentos = [
+    
     {
       icon: bookSolid,
       title: "Aprendizado",
@@ -39,6 +43,7 @@ export const Segmento = () => {
 
   return (
     <section className="sobre-section">
+        <Header />
      <div className="rectangle-sticky"/>
       <h2 className="sobre-titulo">Conheça nossos segmentos</h2>
 

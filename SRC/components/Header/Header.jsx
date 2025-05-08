@@ -29,7 +29,7 @@ export const Header = () => {
               alt="WhatsApp"
             />
           </a>
-          <button className="login-button">Login</button>
+          <Link to="/login" className="login-button">Login</Link>
           <button className="donate-button">Faça uma doação</button>
         </div>
       </div>
@@ -40,7 +40,7 @@ export const Header = () => {
         </button>
 
         <nav className={`nav-items ${menuOpen ? "open" : ""}`}>
-          <Link to="/home" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/homepage" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/sobre" onClick={() => setMenuOpen(false)}>Sobre</Link>
           <Link to="/segmento" onClick={() => setMenuOpen(false)}>Segmentos</Link>
           <Link to="/colaboradores" onClick={() => setMenuOpen(false)}>Colaboradores</Link>

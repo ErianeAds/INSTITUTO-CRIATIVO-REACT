@@ -1,20 +1,171 @@
 .marcas {
-    height: 36px;
-    position: relative;
-    width: 86px;
-  }
+
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
   
-  .marcas .text-wrapper-4 {
-    color: #000000e6;
-    font-family: "Inter", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
-    height: 36px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: -1px;
-    white-space: nowrap;
+}
+
+.sobre-titulo {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #4F4F4F;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sobre-titulo {
+  font-size: 18px;
+  margin-top: 70px;
   }
+}
+
+.text-wrapper-4 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+
+.donate-button {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+.whatsapp img {
+  height: 24px;
+}
+
+/* Galeria de Marcas */
+.brands-gallery {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 45px;
+  justify-items: center;
+  padding: 40px 60px; /* espaço interno nas laterais e no topo/baixo */
+  max-width: 1200px; /* largura máxima */
+  margin: 190px;
+}
+
+
+.brands-gallery img {
+  max-height: 300px;
+  max-width: 120%;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
   
+}
+
+.brands-gallery img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.rectangle3 {
+  background-color: #FFE910;
+  height: 34px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%; /* Corrigido para 100% */
+}
+
+.fatec-text {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+ 
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+.fatec-text:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.fatec-name {
+  color: #3A4955;
+  font-family: Inter;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 30%; /* 76.8px */
+}
+
+.fatec-subname {
+  color: #A51820;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+@media (max-width: 768px) {
+  .brands-gallery {
+  margin-top: 30px;
+  max-width: 600px;
+  padding: 15px 5px;
+  gap: 15px;
+  margin: 90px;
+  }
+
+  .brands-gallery img {
+    max-height: 500px;
+    max-width: 50%;
+   
+  
+}
+  .fatec-text {
+    max-height: 100px;
+    max-width: 30%;
+  }
+  .fatec-name {
+    font-size: 26px;
+  }
+  .fatec-subname {
+    font-size: 12px;
+  }
+ } 
