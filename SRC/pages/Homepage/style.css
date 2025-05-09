@@ -144,6 +144,8 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     padding: 60px 20px;
+    background: url(./IMG/Group2.png);
+    background-size: cover;
     
   
     display: flex;
@@ -285,15 +287,15 @@ body {
   }
   .eventos-carrossel {
     padding: 60px 20px;
-    
+    margin-top: 50px;
     text-align: center;
   }
   
   .titulo-secao {
     font-size: 32px;
     font-family: "Inter", Helvetica;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-top: 50px;
   }
   
   .carrossel-container {
@@ -301,7 +303,7 @@ body {
     overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
-    
+     
    
   }
   

@@ -2,7 +2,7 @@
 
 /* Base header */
 .header {
-  background-color: #fff;
+  background-color: #ededed;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
-  padding-inline: 20px; /* responsivo */
+  padding: 20px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -82,7 +82,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 40px;
+  padding: 10px 40px;
   background-color: #ffffff;
 }
 
@@ -108,7 +108,6 @@
 .nav-items a {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: bold;
   color: #453f3f;
   text-decoration: none;
   text-align: right;
@@ -171,7 +170,7 @@
 
   .nav-items a {
     font-size: 18px;
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .login-button {
     background: #f2f2f2;
