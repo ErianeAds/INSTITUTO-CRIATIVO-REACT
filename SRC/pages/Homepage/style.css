@@ -139,12 +139,12 @@ body {
     height: 550px;
     overflow: hidden;
     position: relative;
-    top: 112px;
+    top: 90px;
     width: 100%;
-    max-width: 1024px;
+    
     margin: 0 auto;
     padding: 60px 20px;
-    background: url(./IMG/Group2.png);
+    background: url(./IMG/retrato-de-uma-jovem-adoravel-posando-com-um-cacto-falso.jpg);
     background-size: cover;
     
   
@@ -184,7 +184,7 @@ body {
   
   .Seao .text-wrapper-8 {
     align-self: stretch;
-    color: #524e4e;
+    color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 70px;
     font-weight: 700;
@@ -198,7 +198,7 @@ body {
   
   .Seao .p {
     align-self: stretch;
-    color: #000000bf;
+    color: #ffffffbf;
     font-family: "Inter", Helvetica;
     font-size: 26px;
     font-weight: 500;
@@ -383,9 +383,10 @@ body {
 @media (max-width: 768px) {
   /* Ajustes para a classe hero-image */
   .Seao .hero-image {
-    width: 90%;  /* Ajusta a largura para 100% */
+    width: 100%;  /* Ajusta a largura para 100% */
     height: 100; /* Ajusta a altura para ser automática, mantendo a proporção */
     margin-top: 20px; /* Adiciona margem no topo */
+    background-size: cover;
   }
 
   /* Ajustes de espaçamento dentro do copy */
@@ -424,7 +425,8 @@ body {
   .Seao .button-2, .Seao .button-3 {
     width: 70%; /* Faz os botões ocuparem 100% da largura */
     padding: 8px 0; /* Ajusta o preenchimento */
-    font-size: 16px; /* Ajusta o tamanho da fonte */
+  
+    
   }
 
   /* Ajuste de imagens (por exemplo, ícones ou imagens pequenas) */

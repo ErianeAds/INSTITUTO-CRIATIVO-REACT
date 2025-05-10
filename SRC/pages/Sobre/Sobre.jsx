@@ -11,7 +11,7 @@ export const Sobre = () => {
   return (
     
     <main className="sobre-section">
-  <Header />
+  
   <div className="rectangle" />
 
   <h2 className="sobre-titulo">Sobre o Instituto Criativo</h2>

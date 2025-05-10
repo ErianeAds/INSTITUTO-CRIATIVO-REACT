@@ -9,7 +9,7 @@
 .sobre-titulo {
   font-family: "Inter-ExtraLight Italic", Helvetica;
   font-size: 32px;
-  font-style: italic;
+  
   margin-bottom: 20px;
   color: #333;
 }
@@ -65,14 +65,14 @@
 /* Retângulo superior fixo */
 .rectangle sticky {
   background-color: #fe284a;
-  height: 34px;
+  height: 64px;
   left: 0;
-  position: fixed;
-  top: 0;
+  position: relative;
+ 
   width: 100%;
   z-index: 999;
   position: sticky;
-  top: 0;
+
   z-index: 5;
 }
 

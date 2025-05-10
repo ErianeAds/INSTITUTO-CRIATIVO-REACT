@@ -8,10 +8,8 @@
 .sobre-titulo {
   font-family: "Inter", Helvetica, sans-serif;
   font-size: 32px;
-  font-style: italic;
   margin-bottom: 20px;
   color: #4F4F4F;
-  margin-top: 40px;
   text-align: center;
 }
 
@@ -63,10 +61,7 @@
 
 
 
-.donate-button {
-  background-color: #ff5c5c;
-  color: #fff;
-}
+
 
 .whatsapp img {
   height: 24px;
@@ -74,14 +69,15 @@
 
 /* Galeria de Marcas */
 .brands-gallery {
-  margin-top: 40px;
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 45px;
   justify-items: center;
   padding: 40px 60px; /* espaço interno nas laterais e no topo/baixo */
   max-width: 1200px; /* largura máxima */
-  margin: 190px;
+  
+
 }
 
 
@@ -100,11 +96,11 @@
 
 .rectangle3 {
   background-color: #FFE910;
-  height: 34px;
-  left: 0;
+  height: 64px;
+  
   position: relative;
-  top: 0;
-  width: 100%; /* Corrigido para 100% */
+  
+  
 }
 
 .fatec-text {

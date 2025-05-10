@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../Header/Logo.svg";
+import loginLogo from "../Header/icons8-male-user.gif";
+
 import "./Header.css";
 
 export const Header = () => {
@@ -8,16 +11,9 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="top-bar">
-        <div className="logo-area">
-          <img
-            className="logo"
-            src="https://www.institutocriativo.com.br/images/favicon.png"
-            alt="Instituto Criativo"
-          />
-          <h1 className="brand-name">Instituto Criativo</h1>
-        </div>
-
+        
         <div className="actions">
+        <button className="donate-button">Faça uma doação</button>
           <a
             className="whatsapp"
             href="https://api.whatsapp.com/send?phone=5511910747492&text=Quero%20falar%20sobre%20o%20Instituto%20Criativo"
@@ -29,12 +25,30 @@ export const Header = () => {
               alt="WhatsApp"
             />
           </a>
-          <Link to="/login" className="login-button">Login</Link>
-          <button className="donate-button">Faça uma doação</button>
+          
+          <Link to="/login" className="login-button">
+            <img
+              src= {loginLogo}
+              alt="Login"
+              className="login-icon"
+            />
+    
+          </Link>
+         
         </div>
       </div>
 
       <div className="menu-bar">
+
+      <div className="logo-area">
+          <img
+            className="logo"
+            src={logo}
+            alt="Instituto Criativo"
+          />
+          <h1 className="brand-name"></h1>
+        </div>
+
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </button>
