@@ -10,6 +10,8 @@ import { Signup } from "./pages/Signup";
 import { Dashboard } from "./pages/Dashboard";
 import { Eventos } from "./pages/Eventos";
 
+
+
 const App = () => {
   return (
     <Routes>

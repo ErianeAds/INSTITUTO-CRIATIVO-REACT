@@ -8,14 +8,19 @@ import univespLogo from "./logo-univesp_completo_cor-positivo.svg";
 import esmLogo from "./ESM-1-1.png";
 import msLogo from "./microsoft-logo.svg";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/footer/footer";
 import "./style.css";
 
 export const Marcas = () => {
   return (
+<>
+      <header className="sobre-all">
+          <Header/>
+          </header>
     <div className="marcas">
-      <Header/>
-      <div className="rectangle3" />
-      <h2 className="sobre-titulo">Estamos conectados com grandes marcas</h2>
+    
+   
+      <h2 className="Titulo-pagina">Estamos conectados com grandes marcas</h2>
 
 
 
@@ -39,5 +44,7 @@ export const Marcas = () => {
         
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };

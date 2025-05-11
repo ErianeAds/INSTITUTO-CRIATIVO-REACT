@@ -1,6 +1,7 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/footer/footer";
 import { useEffect } from "react";
 import exemplo2 from "./IMG/example-2.png";
 import exemplo3 from "./IMG/example-3.png";
@@ -51,9 +52,9 @@ export const Homepage = () => {
   
   
   return (
-  
+  <> <Header/>
     <div className="Seao">
-     <Header/>
+     
   
       <div className="hero-image">
       <div className="copy">
@@ -173,10 +174,12 @@ export const Homepage = () => {
       </div>
       <button className="seta direita">&#8250;</button>
     </div>
+    <Footer/>
   </section>
 
   
 </div>
+</>
     
   );
   

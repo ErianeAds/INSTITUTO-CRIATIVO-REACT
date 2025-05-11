@@ -1,53 +1,55 @@
+
+
+
+
 /* Seção principal com padding, fundo claro e centralização */
-.sobre-section {
+.segmento-section {
   padding: 60px 20px;
   background-color: #fafafa;
   text-align: center;
 }
 
 /* Título principal com fonte itálica leve */
-.sobre-titulo {
+.Titulo-pagina {
   font-family: "Inter-ExtraLight Italic", Helvetica;
   font-size: 32px;
-  
-  margin-bottom: 20px;
+  margin-top: 50px;
   color: #333;
 }
 
 /* Container dos cards com grid responsivo */
-.sobre-cards {
+.segmento-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column; /* empilha os cards verticalmente */
+  align-items: center;  
   font-family: "Inter-ExtraLight Italic", Helvetica;
   font-size: 18px;
-  gap: 30px;
+  gap: 30px;  
 }
 
 /* Cada card individual com borda arredondada, sombra e transição */
-.sobre-card {
+.segmento-card {
   background: #fff;
   padding: 30px 20px;
   border-radius: 16px;
-  max-width: 300px;
+  width: 100%;
+  max-width: 1200px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease;
+ 
 }
 
-/* Efeito ao passar o mouse nos cards */
-.sobre-card:hover {
-  transform: translateY(-5px);
-}
+
 
 /* Ícones no topo de cada card */
-.sobre-icon {
+.segmento-icon {
   width: 60px;
   margin-bottom: 20px;
 }
 
 /* Títulos dos cards */
-.sobre-card h3 {
+.segmento-card h3 {
   font-family: "Inter-ExtraLight Italic", Helvetica;
   font-size: 28px;
   font-style: italic;
@@ -56,39 +58,31 @@
 }
 
 /* Texto descritivo dos cards */
-.sobre-card p {
+.segmento-card p {
   font-size: 1rem;
   color: #4F4F4F;
   line-height: 1.5;
 }
-
-/* Retângulo superior fixo */
-.rectangle sticky {
-  background-color: #fe284a;
-  height: 64px;
-  left: 0;
-  position: relative;
- 
+.imagem-entre-cards {
   width: 100%;
-  z-index: 999;
-  position: sticky;
-
-  z-index: 5;
+  margin: 20px 0;
+  display: flex;
+  border-radius: 8px;
+  object-fit: cover;
 }
+.card-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
-  .sobre-cards {
+  .segmento-cards {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.rectangle-sticky {
-  background-color: #fe284a;
-  height: 34px;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  width: 100%;
-}

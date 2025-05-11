@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../Header/Logo.svg";
+import logoIC from "../Header/Logo.svg";
 import loginLogo from "../Header/icons8-male-user.gif";
 
 import "./Header.css";
@@ -13,7 +13,7 @@ export const Header = () => {
       <div className="top-bar">
         
         <div className="actions">
-        <button className="donate-button">Faça uma doação</button>
+        <button className="donate-button">Doar</button>
           <a
             className="whatsapp"
             href="https://api.whatsapp.com/send?phone=5511910747492&text=Quero%20falar%20sobre%20o%20Instituto%20Criativo"
@@ -42,8 +42,8 @@ export const Header = () => {
 
       <div className="logo-area">
           <img
-            className="logo"
-            src={logo}
+            className="logoICR"
+            src={logoIC}
             alt="Instituto Criativo"
           />
           <h1 className="brand-name"></h1>

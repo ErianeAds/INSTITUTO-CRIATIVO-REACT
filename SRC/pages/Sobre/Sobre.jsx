@@ -5,16 +5,20 @@ import medalSolid from "./medal-solid.svg";
 import { Segmento } from "../Segmento";
 import "./style.css";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/footer/footer";
+import criancasFoto from "../Sobre/perspectiva-de-adolescentes-diversos-que-praticam-actividades-de-saude-e-bem-estar-para-si-mesmos-e-para-sua-comunidade.jpg";
 
 
 export const Sobre = () => {
   return (
-    
-    <main className="sobre-section">
-  
-  <div className="rectangle" />
+   
+  <>
+      <Header/>
+  <img className="rectangle" /> 
+   <section className="sobre-section">
 
-  <h2 className="sobre-titulo">Sobre o Instituto Criativo</h2>
+ 
+  <h2 className="Titulo-pagina">Sobre o Instituto Criativo</h2>
 
   <p className="sobre-descricao">
     O Instituto Criativo é uma ONG que nasceu para transformar a vida das pessoas por meio da
@@ -40,10 +44,15 @@ export const Sobre = () => {
       <h3>Valores</h3>
       <p>Sustentabilidade, qualidade, criatividade, ética, respeito, colaboração, comprometimento, conhecimento.</p>
     </article>
-  </div>
 
-  <Segmento />
-</main>
+   
+
+  </div>
+  <img src={criancasFoto} alt="Criancas Felizes" className="foto-crianca" />
+ 
+</section>
+<Footer/>
+</>
 
     
   );

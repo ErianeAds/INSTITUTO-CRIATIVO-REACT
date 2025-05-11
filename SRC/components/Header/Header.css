@@ -15,7 +15,6 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
- 
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -33,10 +32,6 @@
   
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
-}
 
 .brand-name {
   font-size: 20px;
@@ -82,12 +77,12 @@
 .donate-button {
   background: linear-gradient(180deg, #ffe910 0%, #edd80f 100%);
   border: none;
-  padding: 6px 12px;
+  padding: 7px 12px;
   border-radius: 20px;
   font-weight: 700;
-
   cursor: pointer;
   color: #453f3f;
+  font-size: 1rem;
 }
 
 /* Menu bar */
@@ -98,6 +93,8 @@
   padding: 10px 40px;
   background-color: #ffffff;
 }
+
+
 
 .hamburger {
   font-size: 28px;
@@ -116,6 +113,13 @@
   width: 100%;
   gap: 10px;
   padding: 10px 0;
+  
+}
+
+.nav-items a:hover {
+  color: #19c2bd; /* Azul */
+  font-weight: 800; /* Negrito */
+  text-shadow: 0 0 6px #BBFBF9; /* Sombra azul suave */
 }
 
 .nav-items a {
@@ -124,6 +128,7 @@
   color: #453f3f;
   text-decoration: none;
   text-align: right;
+  transition: color 0.3s, font-weight 0.3s, text-shadow 0.3s;
 }
 
 /* Mostrar menu quando aberto */
