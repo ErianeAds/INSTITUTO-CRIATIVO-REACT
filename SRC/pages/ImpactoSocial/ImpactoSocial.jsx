@@ -5,7 +5,7 @@ import "./style.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/footer";
 import { ActionButton } from "../../components/ActionButton/ActionButton";
-import maisIcon from "../ImpactoSocial/plus-solid.svg"; 
+import maisIcon from "./plus-solid.svg"; 
 
 export const ImpactoSocial = () => {
   return (

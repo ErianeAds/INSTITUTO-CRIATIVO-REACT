@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoIC from "../Header/Logo.svg";
-import loginLogo from "../Header/icons8-male-user.gif";
+import logoIC from "./Logo.svg";
+import loginLogo from "./icons8-male-user.gif";
 
 import "./Header.css";
 
