@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import googleLogo from "./google-logo.svg";
-import ibmLogo from "./ibm-logo.svg"
-import uspLogo from "./usp-logo.svg";
-import sebraeLogo from "./sebrae-logo.png";
-import univespLogo from "./logo-univesp_completo_cor-positivo.svg";
-import esmLogo from "./ESM-1-1.png";
-import msLogo from "./microsoft-logo.svg";
+import googleLogo from "./img/google-logo.svg";
+import ibmLogo from "./img/ibm-logo.svg"
+import uspLogo from "./img/usp-logo.svg";
+import sebraeLogo from "./img/sebrae-logo.png";
+import univespLogo from "./img/logo-univesp_completo_cor-positivo.svg";
+import esmLogo from "./img/ESM-1-1.png";
+import msLogo from "./img/microsoft-logo.svg";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/footer";
 import "./style.css";
