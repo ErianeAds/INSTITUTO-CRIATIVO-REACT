@@ -6,25 +6,38 @@
 
 /* Container geral da seção */
 .segmento-container {
-  padding: 3rem 5%;
+  padding: 3rem 15%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Bloco do título e imagem do topo */
 .segmento-banner {
-  text-align: center;
-  margin-bottom: 2.5rem;
+  width: 100vw;
+  height: 400px; /* altura padrão de banner */
+  overflow: hidden;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  background-size: cover;
 }
 
-.segmento-banner img {
+.segmento-banner img{
   width: 100%;
-  max-height: 500px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
+  border-radius: 0;
 }
+.segmento-container h2 {
+
+  color: #4F4F4F;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+ 
+  
+}
+
 
 /* Título da seção */
 .segmento-titulo {
@@ -38,76 +51,233 @@
 /* Grade de cards responsiva */
 .segmento-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 6.5rem;
+  max-width: 1200px;
+  margin: 4rem auto;
 }
 
 /* Card do segmento */
 .segmento-card {
-  background: #ffffff;
-  border-radius: 12px;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.3s ease;
-  align-items: flex-start;
+  flex-direction: column;
+  min-height: 420px;
+  
+  
+
 }
 
 .segmento-card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Ícone SVG dentro do card */
-.segmento-icon {
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-  margin-top: 0.3rem;
+/* Imagem do topo do card */
+.segmento-img {
+  display: flex;
+  width: 100%;
+  height: 250px; 
+}
+  
+.gif-hover-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Título do card */
-.segmento-content h3 {
+.static-img,
+.gif-img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.gif-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.gif-hover-container:hover .gif-img {
+  opacity: 1;
+}
+
+.gif-hover-container:hover .static-img {
+  opacity: 0;
+}
+
+/* Layout horizontal para ícone + texto */
+.segmento-content-horizontal {
+
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Ícone circular à esquerda */
+.segmento-icon-wrapper {
+  margin-top: -50px;
+  background-color: #ffffff;
+  margin-left: 190px;
+  border-radius: 50%;
+  padding: 12px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  
+}
+
+.segmento-icon-wrapper2 {
+  margin-top: 50px;
+  
+  margin-left: 250px;
+  border-radius: 50%;
+  padding: 12px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.segmento-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.segmento-icon:hover  {
+  animation: butterflyFlight 2s ease-in forwards;
+}
+
+/* Animação de voo tipo borboleta */
+@keyframes butterflyFlight {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-10px, -20px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(20px, -60px) rotate(20deg);
+  }
+  75% {
+    transform: translate(-30px, -100px) rotate(-30deg);
+  }
+  100% {
+    transform: translate(100px, -200px) rotate(45deg);
+    opacity: 0;
+  }
+}
+.segmento-icon2 {
+  width: 28px;
+  height: 28px;
+  filter: invert(1); /* ícone branco */
+}
+
+/* Texto do card */
+
+.segmento-text {
+  flex: 1;
+}
+
+.segmento-text h3 {
   margin: 0;
   font-size: 1.4rem;
   color: #4F4F4F;
+  font-weight: bold;
 }
 
-/* Faixa etária */
 .segmento-faixa {
   display: block;
-  margin: 0.3rem 0 0.6rem;
-  font-size: 0.95rem;
-  font-weight: 600;
+  margin: 0.3rem;
   color: #FF254A;
+  font-weight: bold;
 }
 
-/* Descrição do segmento */
-.segmento-content p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
+.segmento-card:hover .segmento-text h3 {
+color: #FF254A;
+}
+.segmento-card:hover .segmento-text p {
+color: #969696;
+font-weight: bold;
+s
+}
+.segmento-card:hover .segmento-faixa {
+  color:#4F4F4F ;
+}
+.segmento-card:hover{
+  background-color: #ffffff;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
+@media (min-width: 1024px) {
+  .segmento-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem; /* aumenta o espaço entre os cards */
+    padding: 0 2rem;
+  }
+
   .segmento-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    max-width: 100%;
   }
+}
 
-  .segmento-icon {
-    margin-top: 0;
-  }
+@media (max-width: 768px){
 
-  .segmento-banner img {
-    max-height: 200px;
-  }
+  segmento-img {
+  display: flex;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+.segmento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem;
+  margin-top: 60px;
+  
+}
+.segmento-container {
+  padding: 0;
+}
+}
 
-  .segmento-titulo {
-    font-size: 1.8rem;
-    margin-top: 60px;
-  }
+@media (max-width: 320px){
+.segmento-banner {
+  width: 100%;
+  height: 300px; /* altura padrão de banner */
+  padding: 100px 0px 60px ;
+  margin: 0;
+ 
+}
+.segmento-container h2 {
+  color: #4F4F4F;
+  font-size: 1.5rem; 
+}
+.segmento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 0rem;
+  margin-top: 60px;
+  
+}
 }
