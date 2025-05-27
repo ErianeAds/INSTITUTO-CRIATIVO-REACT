@@ -8,7 +8,9 @@ import { Segmento } from "./pages/Segmento";
 import { Login} from "./pages/Login"
 import { Signup } from "./pages/Signup";
 import { Dashboard } from "./pages/Dashboard";
-import { Eventos } from "./pages/Eventos";
+import { PaginaEventos } from "./pages/PaginaEventos";
+import { PaginaEventosVenda } from "./pages/PaginaEventosVenda";
+
 
 
 
@@ -25,8 +27,10 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/eventos" element={<Eventos />} />
-      
+      <Route path="/PaginaEventos" element={<PaginaEventos />} />
+      <Route path="/PaginaEventosVenda" element={<PaginaEventosVenda />} />
+     
+    
     </Routes>
   );
 };

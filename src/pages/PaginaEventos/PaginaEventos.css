@@ -1,0 +1,171 @@
+/* PaginaEventos.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  height: 100vh;
+
+}
+
+.pagina-eventos {
+  display: flex; 
+  height: 100vh;
+  transition: margin-left 0.3s ease;
+  margin-left: 220px; /* largura da sidebar aberta */
+  overflow: hidden;
+}
+
+.pagina-eventos:not(.menu-aberto) {
+  margin-left: 60px; /* largura da sidebar recolhida */
+}
+
+/* Header topo */
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FFE910;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(164, 29, 29, 0.2);
+}
+
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: rotate(90deg);
+}
+
+.titulo-topo {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #FF254A;
+  color: white;
+  height: 100vh;
+  width: 220px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sidebar a:hover {
+  background: #444;
+}
+
+.icon-sidebar {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+ 
+
+}
+
+/* Quando sidebar está colapsada, o texto some */
+.sidebar.collapsed a > span,
+.sidebar.collapsed a > p {
+  display: none;
+}
+
+
+/* Conteúdo principal */
+.eventos-container {
+  margin-top: 60px; /* abaixo do topo fixo */
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+  background: #BBFBF9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+}
+
+/* Cards da dashboard */
+.dashboard-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card-admin {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+  padding: 3rem 1.5rem;
+  flex: 1 1 220px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-admin:hover {
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+  transform: translateY(-3px);
+}
+
+.icon-admin {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.8rem;
+}
+
+/* Instrução */
+.instrucao {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  color: #6d9a98;
+  color: #FFBB28;
+  color:#a47819;
+  color:#a51a31;
+  color: #0f8f8a;
+  color: #D3C00D;
+  color:#a47819;
+  color:#ff7f50;
+  color: #ffc658;
+  color: #6d9a98;
+  
+}
